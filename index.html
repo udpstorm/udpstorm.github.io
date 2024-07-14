@@ -1,105 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>udpstorm.wtf</title>
-  <meta property="og:title" content="udpstorm.wtf">
-  <meta property="og:image" content="https://udpstorm.wtf/assets/images/pfp.gif">
-  <meta name="theme-color" content="#990000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="udpstorm.wtf">
+    <meta property="og:image" content="https://udpstorm.wtf/assets/images/pfp.png">
+    <meta name="theme-color" content="#990000">
 
-  <link rel="icon" href="./assets/images/pfp.gif" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="assets/css/card.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-  <script src="./assets/js/title.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/pfp.png" type="image/x-icon">
+    
+    <script src="./assets/js/title.js"></script>
+    <title>​</title>
 </head>
-
 <body>
-  <div id="loading">
-    <div></div>
-  </div>
-  <div id="wrapper">
-    <div id="card">
-      <div id="banner" style="background-image: url(https://cdn.discordapp.com/banners/1158429903629336646/33db8c407d085c73942a8f505bdf5249.png?size=1024);"></div>
-      <div id="user-info">
-        <div id="avatar">
-          <img
-            src=""
-            alt="udpstorm's Avatar">
-          <div id="status"></div>
+    <main>
+        <img src="./assets/img/pfp.png">
+        <span id="who">stix</span>
+        <span id="footer">𓆩♡𓆪</span>
+        <div class="flexbox">
+            <a href="https://t.me/udpstorm" target="_blank"><button><i class="icon fa-brands telegram"></i>udpstorm</button></a>
+            <a href="https://github.com/udpstorm" target="_blank"><button><i class="icon fa-brands github"></i>udpstorm</button></a>
+            <a href="https://youtube.com/@stixudp" target="_blank"><button><i class="icon fa-brands youtube"></i>@stixudp</button></a>
+            <a href="https://discord.com/users/1158429903629336646" target="_blank"><button><i class="icon fa-brands discord"></i>udpstorm#0</button></a>
         </div>
-
-        <!--===== BADGES =====-->
-
-        <div id="badges">
-        </div>
-
-        <!--===== NAME =====-->
-
-        <div id="username">udpstorm<span>#6969</span></div>
-      </div>
-      <hr/>
-
-      <!--===== ABOUT ME =====-->
-
-      <div id="about">
-        <h4>About me</h4>
-        <p><i>“They call me God, cuz I'm as high as Him.”</i></p>
-      </div>
-
-
-      <!--===== SOCIAL =====-->
-
-      <div id="social">
-        <a class="social-link" href="https://t.me/udpstorm" target="_blank">
-          <img src="assets/images/telegram.png" alt="Telegram" />
-        </a>
-        <a class="social-link" href="https://github.com/udpstorm" target="_blank">
-          <img src="assets/images/github.png" alt="GitHub" />
-        </a>
-                 <!--==== To create more, just copy from "<a" to "</a>"
-                           and paste then edit as you want ====-->
-      </div>
-    </div>
-
-    <div id="music-player">
-        <div id="player-info">
-            <div id="player-controls">
-                <a id="play-pause-button"><i class='bx bx-play-circle'></i></a>
-                <span id="time-display">00:00</span>
-                <div id="timeline">
-                    <input type="range" id="progress-bar" value="0" min="0" step="1">
-                </div>
-                <span id="total-time-display">00:00</span>
-            </div>
-            <audio id="audio" loop>
-                <source src="./assets/audio/song.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </div>
-  </div>
-
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://unpkg.com/tippy.js@6"></script>
-
-  <script src="assets/js/socket.js"></script>
-  <script src="assets/js/config.js"></script>
-  <script src="assets/js/index.js"></script>
-  <script src="assets/js/audio.js"></script>
-
+    </main>
 </body>
-
 </html>

@@ -1,4 +1,3 @@
-// First script 
 document.addEventListener("contextmenu", e => e.preventDefault()); 
 document.addEventListener("keydown", e => {
     if (e.keyCode === 123) {
@@ -15,7 +14,6 @@ document.addEventListener("keydown", e => {
     }
 });
 
-// Second script
 function animateTitle(Title,delay){
     let counter=0;
     let direction=true;
@@ -29,7 +27,6 @@ function animateTitle(Title,delay){
 }
 animateTitle('@udpstorm',300);
 
-// Third script 
 document.addEventListener("mousemove",function(e){
     const cursor=document.querySelector(".custom-cursor");
     cursor.style.left=e.clientX+"px";
@@ -49,7 +46,6 @@ document.addEventListener("mousemove",function(e){
 }
 animateTitle('@udpstorm',300);
 
-// Third script 
 document.addEventListener("mousemove",function(e){
     const cursor=document.querySelector(".custom-cursor");
     cursor.style.left=e.clientX+"px";
