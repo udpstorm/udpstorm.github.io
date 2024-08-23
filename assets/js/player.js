@@ -38,12 +38,14 @@ playPauseBtn.addEventListener('click', () => {
     }
 });
 
-nextBtn.addEventListener('click', () => {
+function playNextTrack() {
     currentTrack = (currentTrack + 1) % tracks.length;
     audioPlayer.src = tracks[currentTrack];
     audioPlayer.play();
     playPauseBtn.innerHTML = '<i class="icon fa-solid fa-pause"></i>';
-});
+}
+
+nextBtn.addEventListener('click', playNextTrack);
 
 prevBtn.addEventListener('click', () => {
     currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
@@ -51,5 +53,7 @@ prevBtn.addEventListener('click', () => {
     audioPlayer.play();
     playPauseBtn.innerHTML = '<i class="icon fa-solid fa-pause"></i>';
 });
+
+audioPlayer.addEventListener('ended', playNextTrack);
 
 loadRandomTrack();
