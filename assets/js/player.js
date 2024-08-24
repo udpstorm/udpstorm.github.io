@@ -12,7 +12,7 @@ const tracks = [
     'assets/music/Bizarro.mp3',
     'assets/music/NoMoreTalk.mp3',
     'assets/music/Feline.mp3',
-    'assets/music/VVV.mp3'
+    'assets/music/VVV.mp3',
 ];
 
 let currentTrack = 0;
