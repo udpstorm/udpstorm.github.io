@@ -61,6 +61,20 @@ img {
     color: var(--text-color-light);
     font-size: clamp(12px, 8vw, 20px);
     margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s forwards;
 }
 
 button {
@@ -149,6 +163,28 @@ button:hover {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--scroll-bar)
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 870px) {

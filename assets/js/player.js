@@ -18,6 +18,7 @@ const tracks = [
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
+
 let currentTrack = 0;
 audioPlayer.volume = 0.15;
 
@@ -28,15 +29,19 @@ function shuffleTracks() {
     }
 }
 
-function loadTrack(index) {
+function loadTrack(index, animationClass) {
     currentTrack = index;
     audioPlayer.src = tracks[currentTrack].path;
     footer.textContent = tracks[currentTrack].title;
+
+    footer.classList.remove('slide-in-right', 'slide-in-left');
+    void footer.offsetWidth;
+    footer.classList.add(animationClass);
 }
 
 function loadRandomTrack() {
     shuffleTracks();
-    loadTrack(0);
+    loadTrack(0, 'slide-in-right');
 }
 
 playPauseBtn.addEventListener('click', () => {
@@ -51,7 +56,7 @@ playPauseBtn.addEventListener('click', () => {
 
 function playNextTrack() {
     const nextTrack = (currentTrack + 1) % tracks.length;
-    loadTrack(nextTrack);
+    loadTrack(nextTrack, 'slide-in-right');
     audioPlayer.play();
     playPauseBtn.innerHTML = '<i class="icon fa-solid fa-pause"></i>';
 }
@@ -60,7 +65,7 @@ nextBtn.addEventListener('click', playNextTrack);
 
 prevBtn.addEventListener('click', () => {
     const prevTrack = (currentTrack - 1 + tracks.length) % tracks.length;
-    loadTrack(prevTrack);
+    loadTrack(prevTrack, 'slide-in-left');
     audioPlayer.play();
     playPauseBtn.innerHTML = '<i class="icon fa-solid fa-pause"></i>';
 });
