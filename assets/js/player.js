@@ -15,6 +15,9 @@ const tracks = [
     { title: "Juice WRLD - Feline", path: "assets/music/Feline.mp3" },
     { title: "Yeat x Playboi Carti - VVV", path: "assets/music/VVV.mp3" },
     { title: "Rich Amiri - One Call", path: "assets/music/OneCall.mp3" },
+    { title: "Don Toliver - No Idea", path: "assets/music/NoIdea.mp3" },
+    { title: "Yeat - If We Being Rëal", path: "assets/music/IfWeBeingReal.mp3" },
+    { title: "Internet Money - Lemonade", path: "assets/music/Lemonade.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
