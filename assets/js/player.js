@@ -32,7 +32,7 @@ function shuffleTracks() {
 function loadTrack(index, animationClass) {
     currentTrack = index;
     audioPlayer.src = tracks[currentTrack].path;
-    footer.textContent = tracks[currentTrack].title;
+    footer.textContent = `ʚ ${tracks[currentTrack].title} ɞ`;
 
     footer.classList.remove('slide-in-right', 'slide-in-left');
     void footer.offsetWidth;
