@@ -3,6 +3,7 @@ const playPauseBtn = document.getElementById('play-pause');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const footer = document.getElementById('footer');
+const seekBar = document.getElementById('seek-bar');
 
 const tracks = [
     { title: "Yeat - Already Rich", path: "assets/music/AlreadyRich.mp3" },
@@ -22,8 +23,10 @@ const tracks = [
 ];
 
 let currentTrack = 0;
-audioPlayer.volume = 0.15;
+audioPlayer.volume = .15;
+let isDragging = false;
 
+// Shuffle tracks array
 function shuffleTracks() {
     for (let i = tracks.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -36,6 +39,7 @@ function loadTrack(index, animationClass) {
     audioPlayer.src = tracks[currentTrack].path;
     footer.textContent = `ʚ ${tracks[currentTrack].title} ɞ`;
 
+    // Apply animation
     footer.classList.remove('slide-in-right', 'slide-in-left');
     void footer.offsetWidth;
     footer.classList.add(animationClass);
@@ -71,6 +75,23 @@ prevBtn.addEventListener('click', () => {
     audioPlayer.play();
     playPauseBtn.innerHTML = '<i class="icon fa-solid fa-pause"></i>';
 });
+
+function updateSeekBar() {
+    if (!isDragging) {
+        seekBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100 || 0;
+    }
+}
+
+seekBar.addEventListener('input', () => {
+    isDragging = true;
+    audioPlayer.currentTime = (seekBar.value / 100) * audioPlayer.duration;
+});
+
+seekBar.addEventListener('change', () => {
+    isDragging = false;
+});
+
+audioPlayer.addEventListener('timeupdate', updateSeekBar);
 
 audioPlayer.addEventListener('ended', playNextTrack);
 

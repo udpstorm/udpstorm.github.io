@@ -60,7 +60,7 @@ img {
 #footer {
     color: var(--text-color-light);
     font-size: clamp(12px, 8vw, 20px);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     padding: 10px;
     position: relative;
@@ -123,9 +123,10 @@ button:hover {
 
 .music-player {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 5px;
 }
 
 .music-player button {
@@ -133,7 +134,7 @@ button:hover {
     border: none;
     color: white;
     padding: 10px 15px;
-    margin: 0 5px;
+    margin: 10px 2px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -145,6 +146,44 @@ button:hover {
 
 .music-player i {
     font-size: 18px;
+}
+
+#seek-bar {
+    width: 200px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    appearance: none;
+    background: #333;
+    height: 4px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#seek-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #990000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#seek-bar::-webkit-slider-thumb:hover {
+    background: #cc0000;
+}
+
+#seek-bar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #990000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#seek-bar::-moz-range-thumb:hover {
+    background: #cc0000;
 }
 
 ::selection {

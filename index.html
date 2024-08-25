@@ -22,9 +22,15 @@
         <span id="footer">Lüh Twizzy</span>
         <!-- Music Player -->
         <div class="music-player">
-            <button id="prev"><i class="icon fa-solid fa-backward"></i></button>
-            <button id="play-pause"><i class="icon fa-solid fa-play"></i></button>
-            <button id="next"><i class="icon fa-solid fa-forward"></i></button>
+            <!-- Music player slider -->
+            <input type="range" id="seek-bar" value="0" min="0" max="100" step="1">
+    
+            <!-- Control buttons -->
+            <div class="controls">
+                <button id="prev"><i class="icon fa-solid fa-backward"></i></button>
+                <button id="play-pause"><i class="icon fa-solid fa-play"></i></button>
+                <button id="next"><i class="icon fa-solid fa-forward"></i></button>
+            </div>
         </div>
         <!-- Social Links -->
         <div class="flexbox">
