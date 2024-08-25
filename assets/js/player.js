@@ -23,7 +23,7 @@ const tracks = [
 ];
 
 let currentTrack = 0;
-audioPlayer.volume = .15;
+audioPlayer.volume = 0.15;
 let isDragging = false;
 
 // Shuffle tracks array
