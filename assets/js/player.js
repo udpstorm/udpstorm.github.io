@@ -9,7 +9,7 @@ const tracks = [
     'assets/music/Succubus.mp3',
     'assets/music/Burn.mp3',
     'assets/music/Bandit.mp3',
-    'assets/music/Bizarro.mp3',
+    'assets/music/BiggerThenEverything.mp3',
     'assets/music/NoMoreTalk.mp3',
     'assets/music/Feline.mp3',
     'assets/music/VVV.mp3',
