@@ -18,7 +18,6 @@ const tracks = [
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
-
 let currentTrack = 0;
 audioPlayer.volume = 0.15;
 
