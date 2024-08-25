@@ -20,6 +20,7 @@ const tracks = [
 ];
 
 let currentTrack = 0;
+audioPlayer.volume = 0.15;
 
 // Shuffle tracks array
 function shuffleTracks() {
