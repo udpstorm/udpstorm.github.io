@@ -1,4 +1,4 @@
-const audioPlayer = document.getElementById('audio-player');
+const audioPlayer = document.getElementById('audio');
 const playPauseBtn = document.getElementById('play-pause');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
