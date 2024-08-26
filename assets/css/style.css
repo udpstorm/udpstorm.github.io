@@ -67,6 +67,7 @@ img {
     display: inline-block;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    will-change: opacity;
 }
 
 .slide-in-right {

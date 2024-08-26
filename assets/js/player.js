@@ -24,6 +24,7 @@ const tracks = [
     { title: "Yeat x Lil Uzi Vert - Crashëd Dat Bitch", path: "assets/music/CrashedDatBitch.mp3" },
     { title: "Gunna - fukumean", path: "assets/music/fukumean.mp3" },
     { title: "Rich Amiri - AINT NOTHING", path: "assets/music/AintNothing.mp3" },
+    { title: "Yeat - Money Twërk", path: "assets/music/MoneyTwerk.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
