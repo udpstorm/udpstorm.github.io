@@ -25,6 +25,8 @@ const tracks = [
     { title: "Gunna - fukumean", path: "assets/music/fukumean.mp3" },
     { title: "Rich Amiri - AINT NOTHING", path: "assets/music/AintNothing.mp3" },
     { title: "Yeat - Money Twërk", path: "assets/music/MoneyTwerk.mp3" },
+    { title: "Yeat - Count Up", path: "assets/music/CountUp.mp3" },
+    { title: "Che x SEMATARY - 666", path: "assets/music/666.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
