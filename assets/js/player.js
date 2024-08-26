@@ -19,6 +19,8 @@ const tracks = [
     { title: "Don Toliver - No Idea", path: "assets/music/NoIdea.mp3" },
     { title: "Yeat - If We Being Rëal", path: "assets/music/IfWeBeingReal.mp3" },
     { title: "Internet Money - Lemonade", path: "assets/music/Lemonade.mp3" },
+    { title: "Travis Scott - FE!N", path: "assets/music/FE!N.mp3" },
+    { title: "Yeat - Shade", path: "assets/music/Shade.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
