@@ -31,7 +31,7 @@ const tracks = [
 ];
 
 let currentTrack = 0;
-audioPlayer.volume = 0.15;
+audioPlayer.volume = 0.10;
 let isDragging = false;
 
 function shuffleTracks() {
