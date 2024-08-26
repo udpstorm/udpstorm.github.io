@@ -234,4 +234,14 @@ button:hover {
     button {
         width: 100%;
     }
+
+    .music-player {
+        gap: 5px;
+    }
+    .music-player button {
+        padding: 8px 10px;
+    }
+    .music-player i {
+        font-size: 16px;
+    }
 }
