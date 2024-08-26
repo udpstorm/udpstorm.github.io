@@ -21,7 +21,7 @@ const tracks = [
     { title: "Internet Money - Lemonade", path: "assets/music/Lemonade.mp3" },
     { title: "Travis Scott - FE!N", path: "assets/music/FE!N.mp3" },
     { title: "Yeat - Shade", path: "assets/music/Shade.mp3" },
-    { title: "Yeat - Crashëd Dat Bitch", path: "assets/music/CrashedDatBitch.mp3" },
+    { title: "Yeat x Lil Uzi Vert - Crashëd Dat Bitch", path: "assets/music/CrashedDatBitch.mp3" },
     { title: "Gunna - fukumean", path: "assets/music/fukumean.mp3" },
     { title: "Rich Amiri - AINT NOTHING", path: "assets/music/AintNothing.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
