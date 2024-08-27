@@ -171,7 +171,7 @@ button:hover {
 }
 
 #seek-bar::-webkit-slider-thumb:hover {
-    background: #8100cc;
+    background: #2500cc;
 }
 
 #seek-bar::-moz-range-thumb {
