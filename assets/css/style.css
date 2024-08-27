@@ -231,7 +231,7 @@ button:hover {
     .flexbox {
         flex-direction: column;
     }
-    button {
+    .flexbox button {
         width: 100%;
     }
 
@@ -239,9 +239,9 @@ button:hover {
         gap: 5px;
     }
     .music-player button {
-        padding: 8px 10px;
+        padding: 8px 12px;
     }
     .music-player i {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
