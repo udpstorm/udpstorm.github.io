@@ -27,6 +27,8 @@ const tracks = [
     { title: "Yeat - Money Twërk", path: "assets/music/MoneyTwerk.mp3" },
     { title: "Yeat - Count Up", path: "assets/music/CountUp.mp3" },
     { title: "Che x SEMATARY - 666", path: "assets/music/666.mp3" },
+    { title: "Yeat - TAKEOVER", path: "assets/music/TAKEOVER.mp3" },
+    { title: "Yeat x Don Toliver - Heavy stunts", path: "assets/music/HeavyStunts.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
