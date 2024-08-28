@@ -30,6 +30,8 @@ const tracks = [
     { title: "Yeat - TAKEOVER", path: "assets/music/TAKEOVER.mp3" },
     { title: "Yeat x Don Toliver - Heavy stunts", path: "assets/music/HeavyStunts.mp3" },
     { title: "SGGKobe - thrax", path: "assets/music/thrax.mp3" },
+    { title: "Destroy Lonely x Ken Carson - President", path: "assets/music/President.mp3" },
+    { title: "Ken Carson - Fighting My Demons", path: "assets/music/FightingMyDemons.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 
