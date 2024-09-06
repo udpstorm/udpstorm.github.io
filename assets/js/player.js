@@ -26,12 +26,13 @@ const tracks = [
     { title: "Rich Amiri - AINT NOTHING", path: "assets/music/AintNothing.mp3" },
     { title: "Yeat - Money Twërk", path: "assets/music/MoneyTwerk.mp3" },
     { title: "Yeat - Count Up", path: "assets/music/CountUp.mp3" },
-    { title: "Che x SEMATARY - 666", path: "assets/music/666.mp3" },
+    { title: "che x SEMATARY - 666", path: "assets/music/666.mp3" },
     { title: "Yeat - TAKEOVER", path: "assets/music/TAKEOVER.mp3" },
     { title: "Yeat x Don Toliver - Heavy stunts", path: "assets/music/HeavyStunts.mp3" },
     { title: "SGGKobe - thrax", path: "assets/music/thrax.mp3" },
     { title: "Destroy Lonely x Ken Carson - President", path: "assets/music/President.mp3" },
     { title: "Ken Carson - Fighting My Demons", path: "assets/music/FightingMyDemons.mp3" },
+    { title: "che - GET NAKED", path: "assets/music/GetNaked.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
 

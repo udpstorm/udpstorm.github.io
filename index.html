@@ -6,11 +6,11 @@
     
     <meta property="og:title" content="@udpstorm">
     <meta property="og:description" content="Just a simple social display site lol">
-    <meta property="og:image" content="https://udpstorm.wtf/assets/img/pfp.png">
+    <meta property="og:image" id="embed-icon" content="https://udpstorm.wtf/assets/img/pfp.png">
     <meta name="theme-color" content="#878ece">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/pfp.png" type="image/x-icon">
+    <link rel="shortcut icon" id="short-icon" href="assets/img/pfp.png" type="image/x-icon">
     
     <script src="https://kit.fontawesome.com/b756c00e57.js" crossorigin="anonymous"></script>
 
@@ -18,7 +18,7 @@
 </head>
 <body>
     <main>
-        <img src="assets/img/pfp.png">
+        <img id="dc-pfp" src="">
         <span id="who">stix</span>
         <span id="footer"></span>
         <!-- Music Player -->
@@ -38,7 +38,6 @@
             <a href="https://t.me/udpstorm" target="_blank"><button><i class="icon fa-brands telegram"></i>udpstorm</button></a>
             <a href="https://github.com/udpstorm" target="_blank"><button><i class="icon fa-brands github"></i>udpstorm</button></a>
             <a href="https://discord.com/users/1158429903629336646" target="_blank"><button><i class="icon fa-brands discord"></i>udpstorm#0</button></a>
-            <a href="dstat" target="_blank"><button><i class="icon fa-solid fa-chart-simple"></i>/dstat</button></a>
         </div>
     </main>
 
@@ -47,5 +46,6 @@
     <script src="assets/js/inspect.js"></script>
     <script src="assets/js/title.js"></script>
     <script src="assets/js/player.js"></script>
+    <script src="assets/js/fetchAssets.js"></script>
 </body>
 </html>
