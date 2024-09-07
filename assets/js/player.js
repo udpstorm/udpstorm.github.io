@@ -78,6 +78,10 @@ playPauseBtn.addEventListener('click', () => {
     if (audioPlayer.paused) {
         audioPlayer.play();
         playPauseBtn.innerHTML = '<i class="icon fa-solid fa-pause"></i>';
+        footer.textContent = `ʚ ${tracks[currentTrack].title} ɞ`;
+        footer.classList.remove('slide-in-right', 'slide-in-left');
+        void footer.offsetWidth;  // trigger reflow for animation
+        footer.classList.add('slide-in-right');
     } else {
         audioPlayer.pause();
         playPauseBtn.innerHTML = '<i class="icon fa-solid fa-play"></i>';
@@ -120,8 +124,6 @@ audioPlayer.addEventListener('timeupdate', updateSeekBar);
 
 audioPlayer.addEventListener('ended', playNextTrack);
 
-// Show default footer text with slide-in animation when the page loads
 window.addEventListener('load', () => showDefaultFooter('slide-in-right'));
 
-// Initially load a random track without changing the footer
 loadRandomTrack();
