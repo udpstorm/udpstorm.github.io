@@ -5,6 +5,8 @@ const nextBtn = document.getElementById('next');
 const footer = document.getElementById('footer');
 const seekBar = document.getElementById('seek-bar');
 
+const defaultFooterText = '♡ vivi ♡';
+
 const tracks = [
     { title: "Yeat - Already Rich", path: "assets/music/AlreadyRich.mp3" },
     { title: "Destroy Lonely - if looks could kill", path: "assets/music/iflookscouldkill.mp3" },
@@ -63,6 +65,15 @@ function loadRandomTrack() {
     loadTrack(0, 'slide-in-right');
 }
 
+function showDefaultFooter(animationClass) {
+    footer.textContent = defaultFooterText;
+
+    // Apply animation
+    footer.classList.remove('slide-in-right', 'slide-in-left');
+    void footer.offsetWidth;
+    footer.classList.add(animationClass);
+}
+
 playPauseBtn.addEventListener('click', () => {
     if (audioPlayer.paused) {
         audioPlayer.play();
@@ -70,6 +81,7 @@ playPauseBtn.addEventListener('click', () => {
     } else {
         audioPlayer.pause();
         playPauseBtn.innerHTML = '<i class="icon fa-solid fa-play"></i>';
+        showDefaultFooter('slide-in-right');
     }
 });
 
@@ -108,4 +120,8 @@ audioPlayer.addEventListener('timeupdate', updateSeekBar);
 
 audioPlayer.addEventListener('ended', playNextTrack);
 
+// Show default footer text with slide-in animation when the page loads
+window.addEventListener('load', () => showDefaultFooter('slide-in-right'));
+
+// Initially load a random track without changing the footer
 loadRandomTrack();
