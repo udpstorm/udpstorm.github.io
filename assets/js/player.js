@@ -34,6 +34,8 @@ const tracks = [
     { title: "SGGKobe - thrax", path: "assets/music/thrax.mp3" },
     { title: "Destroy Lonely x Ken Carson - President", path: "assets/music/President.mp3" },
     { title: "Ken Carson - Fighting My Demons", path: "assets/music/FightingMyDemons.mp3" },
+    { title: "Ndotz - Embrace It", path: "assets/music/EmbraceIt.mp3" },
+    { title: "DJ Scheme - Blue Bills", path: "assets/music/BlueBills.mp3" },
     { title: "che - GET NAKED", path: "assets/music/GetNaked.mp3" },
     { title: "Yeat - Cali", path: "assets/music/Cali.mp3" }
 ];
