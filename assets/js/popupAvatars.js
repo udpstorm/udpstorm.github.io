@@ -9,7 +9,7 @@ async function fetchAvatarsForAll() {
 
             if (userId) {
                 try {
-                    const response = await fetch(`http://185.228.81.59:3000/api/avatar/${userId}`);
+                    const response = await fetch(`https://185.228.81.59:3000/api/avatar/${userId}`);
                     const data = await response.json();
 
                     if (data.avatarUrl) {
