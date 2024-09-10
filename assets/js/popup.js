@@ -23,16 +23,3 @@ function closePopup() {
         overlay.style.display = 'none';
     }, 300);
 }
-
-// document.addEventListener('mousemove', function(e) {
-//     const popup = document.getElementById('popup');
-//     const movementStrength = 10;
-
-//     const windowWidth = window.innerWidth / 2;
-//     const windowHeight = window.innerHeight / 2;
-
-//     const mouseX = (windowWidth - e.pageX) / movementStrength;
-//     const mouseY = (windowHeight - e.pageY) / movementStrength;
-
-//     popup.style.transform = `translate(-50%, -50%) translate(${mouseX}px, ${mouseY}px)`;
-// });
