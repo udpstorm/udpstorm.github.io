@@ -252,6 +252,7 @@ button:hover {
     height: 100%;
     object-fit: cover; /* Ensure the images maintain aspect ratio */
     border-radius: 8px;
+    filter: opacity(60%);
     z-index: 0; /* Send the image behind the text */
 }
 
