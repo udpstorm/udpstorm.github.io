@@ -32,6 +32,11 @@ body {
     animation-name: fadeIn;
     animation-duration: 1s;
     font-family: monospace;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
 }
 
 main {
