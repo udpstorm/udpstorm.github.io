@@ -5,7 +5,7 @@ const nextBtn = document.getElementById('next');
 const footer = document.getElementById('footer');
 const seekBar = document.getElementById('seek-bar');
 
-const defaultFooterText = '♡ nia ♡';
+const defaultFooterText = '♡ gaby ♡';
 
 const tracks = [
     { title: "Yeat - Already Rich", path: "assets/music/AlreadyRich.mp3" },
