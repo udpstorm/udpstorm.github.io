@@ -10,6 +10,7 @@ const defaultFooterText = '♡ gaby ♡';
 const tracks = [
     { title: "Yeat - Already Rich", path: "assets/music/AlreadyRich.mp3" },
     { title: "Destroy Lonely - if looks could kill", path: "assets/music/iflookscouldkill.mp3" },
+    { title: "Nardo Wick - Excuse My French", path: "assets/music/ExcuseMyFrench.mp3" },
     { title: "Ken Carson - Succubus", path: "assets/music/Succubus.mp3" },
     { title: "Juice WRLD - Burn", path: "assets/music/Burn.mp3" },
     { title: "Don Toliver - Bandit", path: "assets/music/Bandit.mp3" },
